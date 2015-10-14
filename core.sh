@@ -16,9 +16,7 @@ sudo apt-get -y autoremove
 sudo apt-get -y install nano curl git-core ntpdate cron-apt
 
 # Set time zone
-sudo rm -f /etc/localtime
-sudo cp -f /usr/share/zoneinfo/Etc/UTC /etc/localtime
-sudo dpkg-reconfigure --frontend noninteractive tzdata
+sudo timedatectl set-timezone Etc/UTC
 
 # Update time
 sudo ntpdate pool.ntp.org
