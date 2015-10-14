@@ -1,0 +1,15 @@
+{
+    "name"        : "xtreamwayz/vagrant-provisioner",
+    "description" : "Composer managed vagrant shell provisioner",
+    "type"        : "project",
+    "keywords": [
+        "Vagrant",
+        "Shell"
+    ],
+    "homepage"    : "https://github.com/xtreamwayz/vagrant-provisioner",
+    "license"     : "MIT",
+    "authors": [{
+        "name"    : "Geert Eltink",
+        "homepage": "https://xtreamwayz.github.io/"
+    }]
+}
