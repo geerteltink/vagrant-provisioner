@@ -6,7 +6,7 @@
 sudo apt-get -y install apache2
 
 sudo a2dismod mpm_prefork mpm_worker
-sudo a2enmod mpm_event proxy_fcgi expires rewrite actions alias
+sudo a2enmod mpm_event proxy_fcgi expires rewrite actions alias headers
 
 # Copy config
 sudo cp -f /vagrant/vendor/xtreamwayz/vagrant-provisioner/config/apache-site.conf \
