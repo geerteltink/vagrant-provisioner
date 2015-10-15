@@ -28,7 +28,8 @@ sudo chmod 644 /etc/apache2/sites-available/zray-ui.conf
 sudo a2ensite zray-ui.conf
 sudo chown -R www-data:www-data /opt/zray
 sudo ln -sf /opt/zray/zray.ini /etc/php5/fpm/conf.d/zray.ini
-sudo ln -sf /opt/zray/zray.ini /etc/php5/cli/conf.d/zray.ini
+# Disable z-ray in cli
+#sudo ln -sf /opt/zray/zray.ini /etc/php5/cli/conf.d/zray.ini
 
 # Restart
 sudo service apache2 reload
