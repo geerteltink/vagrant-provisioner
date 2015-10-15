@@ -13,3 +13,7 @@ sudo chown root:root /home/vagrant/.bashrc
 
 # Restart
 sudo /etc/init.d/mysql restart
+
+# Create vagrant user and database
+mysql -uroot -pvagrant -e "CREATE DATABASE IF NOT EXISTS vagrant;"
+mysql -uroot -pvagrant -e "GRANT ALL PRIVILEGES ON vagrant.* TO vagrant@localhost IDENTIFIED BY 'vagrant'"
