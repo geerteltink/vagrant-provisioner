@@ -8,6 +8,11 @@ sudo apt-get -y install php5-cli php5-fpm php5-mcrypt php5-mysql php5-sqlite php
 # Enable extensions
 sudo php5enmod xdebug
 
+# Configure opcache
+sudo cp /vagrant/vendor/xtreamwayz/vagrant-provisioner/config/opcache.ini \
+        /etc/php5/mods-available/opcache.ini
+sudo chmod 644 /etc/php5/mods-available/opcache.ini
+
 # Setup Apache
 sudo cp /vagrant/vendor/xtreamwayz/vagrant-provisioner/config/php5-fpm.conf \
         /etc/apache2/conf-available/php5-fpm.conf
